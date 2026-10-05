@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FixTrack - Report a Campus Issue</title>
+    <!-- Linking external CSS stylesheet -->
+    <link rel="stylesheet" href="report.css" />
+  </head>
+  <body>
+    <nav class="floating-navbar">
+      <a href="#" class="logo">FixTrack</a>
+
+      <ul class="nav-links">
+        <li><a href="#">Board</a></li>
+        <li><a href="#" class="active">Report an Issue</a></li>
+        <li><a href="#">Triage & Manager</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Issues</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <svg
+            class="search-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" placeholder="Search issues, tags, buildings..." />
+        </div>
+
+        <button class="notif-btn" aria-label="Notifications">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+          </svg>
+          <span class="notif-dot"></span>
+        </button>
+
+        <div class="user-profile">
+          <div class="avatar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="user-details">
+            <span class="user-name">Campus Ops</span>
+            <span class="user-status">ACTIVE</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="step-indicator">Step 1 of 3 · Intake</div>
+      <h1>Report a Campus Issue</h1>
+      <p class="subtitle">
+        Provide precise diagnostic details so university facility<br />engineers
+        can arrive equipped with exact spare parts.
+      </p>
+
+      <div class="form-card">
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="issue-title">Issue Title</label>
+            <span class="label-hint">Required</span>
+          </div>
+          <input
+            type="text"
+            id="issue-title"
+            placeholder="e.g., Leaking washbasin tap or flickering hallway light"
+          />
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="category">Category</label>
+            <span class="label-hint">Select facility domain</span>
+          </div>
+          <select id="category">
+            <option>Choose issue classification...</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label>Diagnostic Photos</label>
+            <span class="label-hint">Recommended</span>
+          </div>
+          <div class="upload-container">
+            <div class="upload-icon">📷</div>
+            <div class="upload-text">
+              <h4>Click to upload or drag & drop photo evidence</h4>
+              <p>
+                PNG, JPG or HEIC up to 10MB. Before/diagnostic angles guarantee
+                technicians arrive with correct parts on dispatch.
+              </p>
+            </div>
+          </div>
+          <div class="uploaded-file-tag">
+            <span
+              >📄 IMG_washroom_faucet_valve.heic
+              <small class="file-size">2.4 MB</small></span
+            >
+            <span class="remove-file">✕</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label>Campus Location</label>
+            <span class="qr-badge">QR Auto-Detected: BLOCK-B-3F-W1</span>
+          </div>
+          <div class="location-grid">
+            <div class="input-with-icon">
+              <span class="input-icon-left">📍</span>
+              <input type="text" value="Sciences Quad — Block B, 3rd Floor" />
+            </div>
+            <div>
+              <input type="text" value="East Restroom (Adjacent to Lab 304)" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label>Triage Urgency Tier</label>
+            <span class="label-hint">Affects technician dispatch SLA</span>
+          </div>
+          <div class="urgency-grid">
+            <div class="urgency-btn low">
+              <div class="dot"></div>
+              <span class="urgency-title">Low</span>
+              <span class="urgency-desc">72h Window</span>
+            </div>
+            <div class="urgency-btn medium">
+              <div class="dot"></div>
+              <span class="urgency-title">Medium</span>
+              <span class="urgency-desc">24h Window</span>
+            </div>
+            <div class="urgency-btn active high">
+              <div class="dot"></div>
+              <span class="urgency-title">High</span>
+              <span class="urgency-desc">8h Priority</span>
+            </div>
+            <div class="urgency-btn critical">
+              <div class="dot"></div>
+              <span class="urgency-title">Critical</span>
+              <span class="urgency-desc">Immediate (&lt;2h)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <span class="toggle-icon">👤</span>
+              <div>
+                <h4>Report without my name</h4>
+                <p>
+                  Your student/staff ID remains completely hidden on public
+                  trackers. Facility dispatchers will only see authenticated
+                  role metadata.
+                </p>
+              </div>
+            </div>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="alert-banner">
+            <span
+              >🛡️ <strong>Real-time Duplicate Guard Active</strong>
+              <span class="alert-subtext"
+                >Next step verifies similar reports filed in Block B within the
+                last 48 hours.</span
+              ></span
+            >
+            <span class="scanner-status">Cluster scanning ready</span>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn-text">← Discard Draft</button>
+          <button class="btn-primary">Check for Duplicates →</button>
+        </div>
+      </div>
+
+      <div class="badges-bar">
+        <span>✓ Certified campus technician dispatch</span>
+        <span>🔒 Encrypted identity storage</span>
+        <span>💬 SMS & email milestone alerts</span>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">FixTrack</div>
+          <p>
+            Stop living with it. Seen. Owned. Fixed. Campus infrastructure
+            wellness and continuous operational restoration.
+          </p>
+        </div>
+        <div class="footer-helpline">
+          <div class="helpline-title">24/7 CAMPUS HELPLINE</div>
+          <div class="helpline-num">(800) 555-CAMPUS</div>
+          <div class="helpline-email">support@fixtrack.edu</div>
+        </div>
+        <div class="footer-links">
+          <a href="#">Facility Directives</a>
+          <a href="#">Service SLAs</a>
+          <a href="#">Privacy & Safety</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span
+          >© 2026 FixTrack Infrastructure Platform. Preserving quiet campus
+          confidence.</span
+        >
+        <span>● All Critical Services Operational</span>
+      </div>
+    </footer>
+  </body>
+</html>
