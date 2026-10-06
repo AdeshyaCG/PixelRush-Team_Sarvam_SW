@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FixTrack – #TRK-7819 Mess Area Plumbing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="feature.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="logo" href="#">FixTrack</a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#">Board</a><a href="#">Report an<br />Issue</a
+        ><a href="#">Triage &amp;<br />Manager</a><a href="#">Analytics</a
+        ><a href="#">Issues</a>
+      </nav>
+      <div class="search">⌕<span>Search issues, tags, buildings...</span></div>
+      <span class="bell" aria-label="Notifications">🔔︎</span>
+      <div class="user">
+        <div class="avatar">☺</div>
+        <div>Campus<br />Ops<span>ACTIVE</span></div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="breadcrumbs">
+        <span
+          >▤ Issues &nbsp;/&nbsp; #TRK-7819 &nbsp;/&nbsp;
+          <b style="font-weight: 500; color: var(--ink)"
+            >Mess Area Plumbing</b
+          ></span
+        >
+        <span class="live-badge"
+          ><b>●</b> LIVE TRACKING &nbsp;·&nbsp; Telemetry Synced 1m ago</span
+        >
+      </div>
+
+      <section class="sla-alert" role="alert">
+        <div class="alert-icon">⚠</div>
+        <div>
+          <div class="small-label">
+            SLA Violation Alert &nbsp;·&nbsp;
+            <span style="font-weight: 400; letter-spacing: 0"
+              >Tier 3 Campus Protocol Invoked</span
+            >
+          </div>
+          <p>
+            Deadline missed by 4 days · Auto-escalated to Dr. Meera Iyer (Senior
+            Campus Facility Manager)
+          </p>
+        </div>
+        <button class="btn">View Escalation Trail ⇥</button>
+      </section>
+
+      <section class="two-columns hero-section">
+        <div>
+          <div class="photo-card">
+            <img
+              src="mess-bay.png"
+              alt="Blocked wash basin drain in Mess Bay 01, Hostel Dining Complex B (critical hazard)" height="370px" width="400px"
+            />
+          </div>
+          <div class="mini-cards">
+            <div class="card">
+              <span class="icon-box">⌂</span>
+              <div>
+                <small>HYDRAULIC STATUS</small><b>Complete Stagnation</b>
+              </div>
+            </div>
+            <div class="card odour-card">
+              <span class="icon-box yellow">≋</span>
+              <div><small>ODOUR LEVEL</small><b>Severe (Level 4/5)</b></div>
+            </div>
+          </div>
+        </div>
+        <article class="card details-card">
+          <div class="tag-row">
+            <span class="tag red">OVERDUE / ESCALATED</span
+            ><span class="tag">⛨ CRITICAL PRIORITY (SAFETY &amp; HYGIENE)</span
+            ><span class="created-date">Created Oct 1, 2026</span>
+          </div>
+          <h1>Blocked drain, Mess area wash basins</h1>
+          <p class="location-line">
+            <b>▦ Mess Area · Ground Floor Washrooms</b> &nbsp;| Dining Hall West
+            Wing
+          </p>
+          <p class="description">
+            Severe blockage in main drainage line. Water stagnation causing foul
+            odor and severe hygiene risks in the dining area. Food debris and
+            backflow water preventing cafeteria kitchen cleanup and daily
+            sanitization cycles.
+          </p>
+          <div class="affected-box">
+            <div class="avatar-group">
+              <i>AR</i><i>KP</i><i>SN</i><i>+28</i>
+            </div>
+            <div>
+              <span class="affected-count"
+                >31 people<small>living with this</small></span
+              ><em>ACTIVE GRIEVANCE FOR 14 CONTINUOUS DAYS</em>
+            </div>
+            <button class="btn">👥 I'm affected too (+31)</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="card pipeline-card">
+        <div class="pipeline-header">
+          <div>
+            <h2>Service Lifecycle Pipeline</h2>
+            <p>Standard Campus SLA: 48 Hours · Current Elapsed: 336 Hours</p>
+          </div>
+          <span class="violation-badge">⏱ SLA VIOLATED BY 96 HOURS</span>
+        </div>
+        <div class="stages">
+          <div class="stage">
+            <div class="stage-circle">✓</div>
+            <span class="small-label">STAGE 01</span><b>Reported</b
+            ><span class="stage-time">Oct 1,<br />09:10 AM</span
+            ><small>Logged by Priya Nair (Dining Staff)</small>
+          </div>
+          <div class="stage">
+            <div class="stage-circle">✓</div>
+            <span class="small-label">STAGE 02</span><b>Assigned</b
+            ><span class="stage-time">Oct 2,<br />10:45 AM</span
+            ><small>Dispatched to Imran Sheikh</small>
+          </div>
+          <div class="stage stalled">
+            <div class="stage-circle">⚙</div>
+            <span class="small-label">STAGE 03 · STALLED</span><b>In Progress</b
+            ><span class="stage-time">Overdue by 4 days</span
+            ><small style="max-width: none; font-weight: 600"
+              >Open 14 days ·<br />Requisition Bottleneck</small
+            >
+          </div>
+          <div class="stage pending">
+            <div class="stage-circle">🔒︎</div>
+            <span class="small-label">STAGE 04</span><b>Resolved</b
+            ><span class="stage-time">Pending<br />Action</span
+            ><small>Awaiting sanitary verification</small>
+          </div>
+        </div>
+        <div class="disruption-banner">
+          <span style="font-size: 8px; letter-spacing: 0; font-weight: 500"
+            >⚠ Timeline Disruption: Mechanical equipment dependency unresolved
+            by Central Depot.</span
+          ><span>ESCALATION FLAGGED #882</span>
+        </div>
+      </section>
+
+      <section class="two-columns bottom-section">
+        <div class="left-column">
+          <article class="card specialist-card">
+            <div class="card-header">
+              <span class="small-label">Assigned Specialist</span
+              ><span class="badge">Badge #TECH-44</span>
+            </div>
+            <div class="person">
+              <div class="icon-box">IS</div>
+              <div>
+                <b>Imran Sheikh</b
+                ><small>Housekeeping &amp; Sanitation Lead</small
+                ><small class="duty-status">On-Campus Duty (Zone B)</small>
+              </div>
+            </div>
+            <div class="info-box pink">
+              <span class="small-label">Service SLA Target</span
+              ><b>Oct 11, 2026 <span>(Missed by 4 days)</span></b>
+            </div>
+            <div class="info-box">
+              <span class="small-label">⏳ Current Blocker</span>
+              <p>
+                Awaiting industrial motorized drain auger requisition from
+                central campus depot (PO #REQ-9901). Hand snaking proved
+                insufficient for main sediment trap.
+              </p>
+            </div>
+            <div class="action-buttons">
+              <button>📞 Call Direct</button><button>▤ Send SMS</button>
+            </div>
+          </article>
+          <article class="escalation-card">
+            <div class="card-header">
+              <span class="small-label">⚙ Escalation Takeover</span
+              ><span class="badge">Protocol Level 3</span>
+            </div>
+            <div class="person">
+              <div class="icon-box">MI</div>
+              <div>
+                <b>Dr. Meera Iyer</b
+                ><small>Senior Campus Facility Manager</small
+                ><small
+                  >Division of Campus Infrastructure &amp;<br />Safety</small
+                >
+              </div>
+            </div>
+            <div class="escalation-message">
+              Direct managerial override activated. Priority requisition
+              override submitted to expedited campus mechanical repair stores.
+              Emergency response meeting scheduled for 02:00 PM today.
+            </div>
+            <button class="escalation-button">☎ Contact Escalation Desk</button>
+          </article>
+        </div>
+
+        <article class="card trail-card">
+          <div class="trail-header">
+            <div>
+              <h2>Operational Trail</h2>
+              <p>Immutable activity ledger and communications log</p>
+            </div>
+            <span>⏷⤓</span>
+          </div>
+          <div class="timeline">
+            <div class="timeline-event system-event">
+              <div class="event-header">
+                <b
+                  >SYSTEM AUTOMATED DISPATCH
+                  <span class="pill">ESCALATION</span></b
+                ><span>Today, 08:30 AM</span>
+              </div>
+              <p>
+                Target resolution window exceeded by 4 days. Ticket priority
+                auto-escalated to <b>Critical</b>. Case supervisory jurisdiction
+                assigned to Dr. Meera Iyer.
+              </p>
+            </div>
+            <div class="timeline-event navy-dot">
+              <div class="event-header">
+                <b>Imran Sheikh <small>(Lead Technician)</small></b
+                ><span>Oct 12, 11:15 AM</span>
+              </div>
+              <p>
+                Inspected basins. Major grease trap &amp; sediment blockage
+                detected deep in the main line. Standard hand snake ineffective;
+                require specialized motorized auger tool from central stores.
+                Requisition #REQ-9901 logged.
+              </p>
+            </div>
+            <div class="timeline-event">
+              <div class="event-header">
+                <b>Hostel Warden Office</b><span>Oct 8, 01:20 PM</span>
+              </div>
+              <p>
+                Resident complaints logged regarding sanitation hazard during
+                lunch service. Odor causing complaints across Dining Hall West
+                Wing. Urging fast-track resolution before evening meal cycles.
+              </p>
+            </div>
+            <div class="timeline-event">
+              <div class="event-header">
+                <b>Priya Nair <small>(Dining Staff)</small></b
+                ><span>Oct 1, 09:10 AM</span>
+              </div>
+              <p>
+                Reported 14 days ago via QR portal. Initial note: Water draining
+                extremely slowly after morning breakfast times. Murky backflow
+                noticed at basin outlet 2.
+              </p>
+            </div>
+          </div>
+          <div class="composer">
+            <span>Post an operational update, question, or note...</span>
+            <div class="composer-footer">
+              <span
+                >📎 Attach &nbsp;·&nbsp; 👁 Visible to residents &amp; facility
+                ops</span
+              ><button class="send-button">Send Note ▷</button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <div class="logo">FixTrack</div>
+          <p>
+            Stop living with it. Seen. Owned. Fixed. Campus infrastructure
+            wellness and continuous operational restoration.
+          </p>
+        </div>
+        <div class="helpline">
+          <small>24/7 CAMPUS HELPLINE</small><b>(800) 555-CAMPUS</b
+          ><span>support@fixtrack.edu</span>
+        </div>
+        <nav class="footer-links">
+          <a href="#">Facility Directives</a><a href="#">Service SLAs</a
+          ><a href="#">Privacy &amp; Safety</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2025 FixTrack Infrastructure Platform. Preserving quiet campus
+          confidence.
+        </p>
+        <span>All Critical Services Operational</span>
+      </div>
+    </footer>
+  </body>
+</html>
