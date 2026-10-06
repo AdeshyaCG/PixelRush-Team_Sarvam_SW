@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixTrack - Similarity Verification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importing Playfair Display for Serif headings/logo and Inter for the UI text -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="duplicate.css">
+    
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar-container">
+        <header class="navbar">
+            <div class="logo serif">FixTrack</div>
+            <nav class="nav-links">
+                <a href="#" class="nav-link">Board</a>
+                <a href="#" class="nav-link active-pill">Report an Issue</a>
+                <a href="#" class="nav-link">Triage & Manager</a>
+                <a href="#" class="nav-link">Analytics</a>
+                <a href="#" class="nav-link">Issues</a>
+            </nav>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <!-- Replace with standard search icon image -->
+                    <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Search">
+                    Search issues, tags, buildings...
+                </div>
+                <!-- Replace with bell icon image -->
+                <img src="https://cdn-icons-png.flaticon.com/512/3602/3602145.png" alt="Notifications" class="icon-small" style="width: 18px; height: 18px;">
+                <div class="profile-section">
+                    <div class="profile-icon">
+                        <!-- Replace with profile icon image -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Profile" style="width: 16px; height: 16px; filter: invert(1);">
+                    </div>
+                    <div>
+                        <div style="font-weight: 500;">Campus</div>
+                        <div style="color: #6b7280;">Ops ACTIVE</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
+        <div class="step-indicator">STEP 2 OF 3 - SIMILARITY VERIFICATION</div>
+        
+        <h1 class="serif">Wait, is this your issue?</h1>
+        <p class="subtitle">We found matching reports nearby in your building. Supporting an<br>active report raises priority without creating campus noise.</p>
+        
+        <div class="location-match">
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Pin" class="icon-small" style="filter: invert(40%) sepia(20%) saturate(1000%) hue-rotate(350deg);">
+            Block B · East Wing - 2 high-confidence matches nearby
+        </div>
+
+        <!-- CARDS -->
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-image-container">
+                    <!-- Replace with your actual sink image path -->
+                    <img src="tap.jpeg" alt="Leaking tap" class="main-img">
+                    <div class="card-tags-top">
+                        <span class="tag tag-assigned">Assigned</span>
+                        <span class="tag tag-high">High Urgency</span>
+                    </div>
+                    <div class="card-tag-match">
+                        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Check" class="icon-small">
+                        Matched 94%
+                    </div>
+                </div>
+                <div class="card-location">
+                    <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Pin" class="icon-small">
+                    BLOCK B EAST WING - 12 METERS AWAY
+                </div>
+                <h3>Leaking tap, Block B, 3rd floor washroom</h3>
+                <p class="desc">Water stream constantly runs from faucet mixer stem. Floor puddle developing near middle cubicle basin.</p>
+                <div class="card-meta">
+                    <span style="display: flex; align-items: center; gap: 4px;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2088/2088617.png" alt="Time" class="icon-small"> 18 hours ago
+                    </span>
+                    <span class="affected-tag">
+                        <span style="background: #e6a23c; color: white; border-radius: 50%; width: 16px; height: 16px; display: inline-flex; justify-content: center; align-items: center; font-size: 9px;">14</span>
+                        14 residents affected
+                    </span>
+                </div>
+                <button class="btn-affected">
+                    <img src="https://cdn-icons-png.flaticon.com/512/126/126473.png" alt="Thumbs up" class="icon-small">
+                    I'm affected too (+1)
+                </button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-image-container">
+                    <!-- Replace with your actual sink image path -->
+                    <img src="tap_2.jpeg" alt="Dripping sink" class="main-img">
+                    <div class="card-tags-top">
+                        <span class="tag tag-progress">In Progress</span>
+                        <span class="tag tag-medium">Medium Urgency</span>
+                    </div>
+                    <div class="card-tag-match">
+                        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Check" class="icon-small">
+                        Matched 88%
+                    </div>
+                </div>
+                <div class="card-location">
+                    <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Pin" class="icon-small">
+                    BLOCK B EAST WING - SAME WASHROOM
+                </div>
+                <h3>Low water pressure & dripping sink</h3>
+                <p class="desc">Water pressure drops completely during morning peak hours. Cold supply valve whistles loudly.</p>
+                <div class="card-meta">
+                    <span style="display: flex; align-items: center; gap: 4px;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2088/2088617.png" alt="Time" class="icon-small"> 1 day ago
+                    </span>
+                    <span class="affected-tag">
+                        <span style="background: #e6a23c; color: white; border-radius: 50%; width: 16px; height: 16px; display: inline-flex; justify-content: center; align-items: center; font-size: 9px;">8</span>
+                        8 residents affected
+                    </span>
+                </div>
+                <button class="btn-affected">
+                    <img src="https://cdn-icons-png.flaticon.com/512/126/126473.png" alt="Thumbs up" class="icon-small">
+                    I'm affected too (+1)
+                </button>
+            </div>
+        </div>
+
+        <div class="divider-text">OR PROCEED INDEPENDENTLY</div>
+
+        <!-- FALLBACK BOX -->
+        <div class="fallback-box">
+            <div class="fallback-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/2961/2961948.png" alt="Document" style="width: 24px; opacity: 0.7;">
+            </div>
+            <h4>None of these match your specific problem?</h4>
+            <p>If your maintenance issue is situated elsewhere or has distinct symptoms, file an isolated report for fast direct dispatch.</p>
+            <button class="btn-new-issue">
+                No, mine is different - Submit as new issue &rarr;
+            </button>
+            <a href="#" class="link-back">
+                &larr; Back to edit issue details
+            </a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo-desc">
+                <div class="serif">FixTrack</div>
+                <p>Stop living with it. Seen. Owned. Fixed. Campus infrastructure wellness and continuous operational restoration.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-contact">
+                    <div class="label">24/7 CAMPUS HELPLINE</div>
+                    <div class="phone">(800) 555-CAMPUS</div>
+                    <div style="font-size: 11px;">support@fixtrack.edu</div>
+                </div>
+                <div style="display: flex; gap: 24px; padding-top: 10px;">
+                    <a href="#" style="text-decoration: none; color: inherit;">Facility Directives</a>
+                    <a href="#" style="text-decoration: none; color: inherit;">Service SLAs</a>
+                    <a href="#" style="text-decoration: none; color: inherit;">Privacy & Safety</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2025 FixTrack Infrastructure Platform. Preserving quiet campus confidence.</div>
+            <div class="status-indicator">
+                <span class="status-dot"></span> All Critical Services Operational
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
