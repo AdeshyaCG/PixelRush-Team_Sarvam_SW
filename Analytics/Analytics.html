@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixTrack - Maintenance Analytics</title>
+    <!-- Google Fonts: Newsreader for Serif, Inter for Sans-Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="analytics.css">
+    
+</head>
+<body>
+
+    <div class="navbar-wrapper">
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="logo">FixTrack</div>
+                <ul class="nav-links">
+                    <li>Board</li>
+                    <li>Report an Issue</li>
+                    <li>Triage & Manager</li>
+                    <li class="active">Analytics</li>
+                    <li>Issues</li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search issues, tags, buildings...">
+                </div>
+                <i class="far fa-bell" style="color: var(--text-muted); font-size: 16px; cursor: pointer;"></i>
+                <div class="user-profile">
+                    <img src="https://i.pravatar.cc/150?img=68" alt="Campus Ops">
+                    <div>
+                        <span style="color: var(--primary-dark);">Campus Ops</span> <br> 
+                        <span style="color: var(--success-green); font-size: 9px; letter-spacing: 0.5px;">ACTIVE</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <header class="page-header">
+            <div>
+                <div class="breadcrumb">
+                    <span class="dot"></span> Campus Facility Intelligence
+                </div>
+                <h1>Maintenance Analytics</h1>
+                <p>Quiet oversight across 6 campus sectors. Real-time resolution metrics, capacity distribution, and escalation tracking.</p>
+            </div>
+            <div class="header-actions">
+                <button class="btn-date"><i class="far fa-calendar-alt text-muted"></i> Last 30 Days : Oct 2026 <i class="fas fa-chevron-down text-muted" style="font-size: 10px; margin-left: 8px;"></i></button>
+                <button class="btn-export"><i class="fas fa-download"></i> Export Report</button>
+            </div>
+        </header>
+
+        <div class="kpi-panel">
+            <div class="kpi-col">
+                <div class="kpi-header">
+                    <div class="kpi-label">Avg. Resolution Time</div>
+                    <div class="kpi-badge">+12% vs avg</div>
+                </div>
+                <div class="kpi-value">3.2 <span>days</span></div>
+                <div class="kpi-subtext">Target threshold < 4.0 days - Status Good</div>
+            </div>
+            
+            <div class="kpi-col">
+                <div class="kpi-header">
+                    <div class="kpi-label">Total Open Issues</div>
+                    <i class="fas fa-ellipsis-h" style="color: rgba(255,255,255,0.4);"></i>
+                </div>
+                <div class="kpi-value">42 <span>active</span></div>
+                <div class="kpi-breakdown">
+                    <div class="kpi-breakdown-item"><span class="dot-crit"></span> 2 Critical</div>
+                    <div class="kpi-breakdown-item"><span class="dot-high"></span> 30 High</div>
+                    <div class="kpi-breakdown-item"><span class="dot-rout"></span> 10 Routine</div>
+                </div>
+            </div>
+
+            <div class="kpi-col">
+                <div class="kpi-header">
+                    <div class="kpi-label">Resolved On Time</div>
+                    <div class="kpi-label" style="color: rgba(255,255,255,0.9);">SLA 90.0%</div>
+                </div>
+                <div class="kpi-value" style="justify-content: space-between; width: 100%;">
+                    94.2% 
+                    <i class="far fa-check-circle" style="font-size: 24px; color: rgba(255,255,255,0.4);"></i>
+                </div>
+                <div class="kpi-subtext">47/50 compliances over practical rolling period</div>
+            </div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap">
+                        <div class="sup">Distribution</div>
+                        <h3>Issues by Category</h3>
+                    </div>
+                    <i class="fas fa-ellipsis-h text-muted"></i>
+                </div>
+                
+                <div class="doughnut-container">
+                    <div class="doughnut">
+                        <div class="doughnut-inner">
+                            <div class="val">148</div>
+                            <div class="lbl">Total</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend-grid">
+                    <div class="legend-item">
+                        <div class="legend-label"><span class="dot-crit" style="background: #1e3a8a;"></span> Electrical</div>
+                        <div class="legend-val">35%</div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-label"><span class="dot-crit" style="background: #d97706;"></span> Plumbing</div>
+                        <div class="legend-val">28%</div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-label"><span class="dot-crit" style="background: #f59e0b;"></span> Furniture</div>
+                        <div class="legend-val">15%</div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-label"><span class="dot-crit" style="background: #334155;"></span> Doors & Locks</div>
+                        <div class="legend-val">10%</div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-label"><span class="dot-crit" style="background: #10b981;"></span> Cleanliness</div>
+                        <div class="legend-val">12%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap">
+                        <div class="sup">Geography & Sector</div>
+                        <h3>Issues by Campus Location</h3>
+                    </div>
+                    <div style="font-size: 11px; display: flex; gap: 12px;">
+                        <span style="color: var(--text-muted);"><span class="dot-crit" style="background: var(--primary-dark); display: inline-block; margin-right: 4px;"></span> Active Volume</span>
+                        <span style="color: var(--text-main); font-weight: 500;"><span class="dot-crit" style="background: var(--high-yellow); display: inline-block; margin-right: 4px;"></span> SLA Breach Risk</span>
+                    </div>
+                </div>
+
+                <div class="bar-chart-container">
+                    <div class="bar-col">
+                        <span class="bar-val">56</span>
+                        <div class="bar" style="height: 140px;"></div>
+                        <span class="bar-label">Blk A<br>10%</span>
+                    </div>
+                    <div class="bar-col">
+                        <span class="bar-val">48</span>
+                        <div class="bar" style="height: 120px;"></div>
+                        <span class="bar-label">Blk B<br>12%</span>
+                    </div>
+                    <div class="bar-col">
+                        <span class="bar-val">35</span>
+                        <div class="bar" style="height: 90px;"></div>
+                        <span class="bar-label">Blk C<br>20%</span>
+                    </div>
+                    <div class="bar-col">
+                        <span class="bar-val">22</span>
+                        <div class="bar" style="height: 55px;"></div>
+                        <span class="bar-label">Blk D<br>32%</span>
+                    </div>
+                    <div class="bar-col">
+                        <span class="bar-val" style="color: var(--high-yellow);">18</span>
+                        <div class="bar highlight" style="height: 45px;"></div>
+                        <span class="bar-label" style="color: var(--high-yellow); font-weight: 600;">Mess<br>14%</span>
+                    </div>
+                    <div class="bar-col">
+                        <span class="bar-val">9</span>
+                        <div class="bar" style="height: 25px;"></div>
+                        <span class="bar-label">Library<br>10%</span>
+                    </div>
+                </div>
+
+                <div class="chart-footer">
+                    <span style="color: var(--text-muted);">Highest facility stress: <strong style="color: var(--text-main);">Block B (42 tickets)</strong></span>
+                    <a href="#" style="color: var(--text-muted); text-decoration: none; font-weight: 500;">Sector Drilldown <i class="fas fa-arrow-right" style="margin-left: 4px;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="image-cards-row">
+            <div class="img-card">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Corridor">
+                <div class="img-overlay">
+                    <div class="tag">Sector A Overview (Resolved)</div>
+                    <div class="desc">Lighting balance & perimeter sensors calibrated</div>
+                </div>
+            </div>
+            <div class="img-card">
+                <img src="https://images.unsplash.com/photo-1574360647363-22872bc9776d?auto=format&fit=crop&w=600&q=80" alt="Cafeteria">
+                <div class="img-overlay">
+                    <div class="tag">Mess & Dining Facility</div>
+                    <div class="desc">Grease trap sanitization & drainage remediation</div>
+                </div>
+            </div>
+            <div class="img-card">
+                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=600&q=80" alt="Library">
+                <div class="img-overlay">
+                    <div class="tag">Central Library Wing</div>
+                    <div class="desc">100% SLA compliance for 4 consecutive quarters</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <div class="table-header-area">
+                <div class="section-title">
+                    <h3><span class="dot-crit" style="display:inline-block;"></span> Overdue & Escalated Issues</h3>
+                    <p>Require operative superior intervention and immediate front line dispatch</p>
+                </div>
+                <div class="badge-outline">2 ACTIVE ESCALATIONS</div>
+            </div>
+
+            <table class="table-overdue">
+                <thead>
+                    <tr>
+                        <th>Ticket ID</th>
+                        <th>Issue Description</th>
+                        <th>Location</th>
+                        <th>Days Overdue</th>
+                        <th>Assigned Lead</th>
+                        <th>Escalation Tier</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td-bold">#TRK-8921</td>
+                        <td>
+                            <div class="td-bold">Mess area wash basin drain blockage</div>
+                            <div class="td-desc">Breakfast service reporting strong supervisor...</div>
+                        </td>
+                        <td class="td-desc">Mess & Dining - South Bay</td>
+                        <td>
+                            <span class="status-pill red"><i class="fas fa-exclamation-circle"></i> 4 days overdue</span>
+                        </td>
+                        <td>
+                            <div class="user-cell">
+                                <div class="user-initials">RK</div>
+                                <div>Ramesh Kumar</div>
+                            </div>
+                        </td>
+                        <td class="td-desc">Dr. Meera Iyer (Esc T1)</td>
+                        <td><button class="btn-action red"><i class="fas fa-bolt"></i> Expedite</button></td>
+                    </tr>
+                    <tr>
+                        <td class="td-bold">#TRK-9044</td>
+                        <td>
+                            <div class="td-bold">Corridor primary lighting failure</div>
+                            <div class="td-desc">Switch relay tripped during storm...</div>
+                        </td>
+                        <td class="td-desc">Block A - Level 2 North</td>
+                        <td>
+                            <span class="status-pill yellow"><i class="fas fa-clock"></i> 1 day overdue</span>
+                        </td>
+                        <td>
+                            <div class="user-cell">
+                                <img src="https://i.pravatar.cc/150?img=11" alt="Suresh">
+                                <div>Suresh Patil</div>
+                            </div>
+                        </td>
+                        <td class="td-desc">Tier 1 Shift Lead</td>
+                        <td><button class="btn-action gray"><i class="fas fa-arrow-up"></i> Escalate</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-section">
+            <div class="table-header-area">
+                <div class="section-title">
+                    <h3>Staff Workload & Performance</h3>
+                    <p>Real-time task spread utilization, assigned velocity, and verified resident feedback</p>
+                </div>
+                <div class="badge-green"><i class="fas fa-check-circle"></i> CAPACITY STATUS: Optimal (94%)</div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Specialist</th>
+                        <th>Trade</th>
+                        <th style="width: 25%;">Active Tasks</th>
+                        <th>Average Per Time</th>
+                        <th>Resident Satisfaction</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="user-cell">
+                                <div class="user-initials">RK</div>
+                                <div>
+                                    <div class="td-bold">Ramesh Kumar</div>
+                                    <div style="font-size: 11px; color: var(--text-muted);">Campus Lead Technician</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="td-desc">Plumbing</td>
+                        <td>
+                            <div class="progress-wrapper">
+                                <span class="td-bold">4 tasks</span>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 80%; background: #a16207;"></div></div>
+                                <span style="font-size: 11px; color: var(--text-muted);">80% cap</span>
+                            </div>
+                        </td>
+                        <td class="td-bold">2.8 days</td>
+                        <td><div class="rating"><i class="fas fa-star"></i> 96%</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="user-cell">
+                                <img src="https://i.pravatar.cc/150?img=11" alt="Suresh">
+                                <div>
+                                    <div class="td-bold">Suresh Patil</div>
+                                    <div style="font-size: 11px; color: var(--text-muted);">HVAC & High-Voltage Lead</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="td-desc">Electrical</td>
+                        <td>
+                            <div class="progress-wrapper">
+                                <span class="td-bold">3 tasks</span>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 60%; background: #1e3a8a;"></div></div>
+                                <span style="font-size: 11px; color: var(--text-muted);">60% cap</span>
+                            </div>
+                        </td>
+                        <td class="td-bold">1.9 days</td>
+                        <td><div class="rating"><i class="fas fa-star"></i> 98%</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="user-cell">
+                                <img src="https://i.pravatar.cc/150?img=5" alt="Anita">
+                                <div>
+                                    <div class="td-bold">Anita Das</div>
+                                    <div style="font-size: 11px; color: var(--text-muted);">General Structure Repair</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="td-desc">Maintenance</td>
+                        <td>
+                            <div class="progress-wrapper">
+                                <span class="td-bold">1 task</span>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 20%; background: #10b981;"></div></div>
+                                <span style="font-size: 11px; color: var(--text-muted);">20% cap</span>
+                            </div>
+                        </td>
+                        <td class="td-bold">1.4 days</td>
+                        <td><div class="rating"><i class="fas fa-star"></i> 100%</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="user-cell">
+                                <img src="https://i.pravatar.cc/150?img=8" alt="Imran">
+                                <div>
+                                    <div class="td-bold">Imran Sheikh</div>
+                                    <div style="font-size: 11px; color: var(--text-muted);">Third Line Subcontractor</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="td-desc">Powerwashing</td>
+                        <td>
+                            <div class="progress-wrapper">
+                                <span class="td-bold">5 tasks</span>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 100%; background: #ef4444;"></div></div>
+                                <span style="font-size: 11px; color: var(--text-muted);">100% cap</span>
+                            </div>
+                        </td>
+                        <td class="td-bold">0.8 days</td>
+                        <td><div class="rating"><i class="fas fa-star"></i> 92%</div></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div style="margin-top: 16px; font-size: 11px; color: var(--text-muted); display: flex; justify-content: space-between;">
+                <span><i class="fas fa-info-circle"></i> Automated dispatch allocation based on active load, field and proximity zones.</span>
+                <span style="font-weight: 500; color: var(--text-main);">Resource: Staff Levels</span>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-left">
+                <h2 class="serif">FixTrack</h2>
+                <p>Stop living with it. Seen. Owned. Fixed. Campus infrastructure wellness and continuous operational restoration.</p>
+            </div>
+            <div class="footer-contact">
+                24/7 CAMPUS HELPLINE
+                <strong>(800) 555-CAMPUS</strong>
+                <span style="text-transform: lowercase;">support@fixtrack.edu</span>
+            </div>
+            <div class="footer-links">
+                <span>Facility Directives</span>
+                <span>Service SLAs</span>
+                <span>Privacy & Safety</span>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <div>© 2026 FixTrack Infrastructure Platform. Preserving quiet campus confidence.</div>
+            <div class="footer-status"><span class="status-dot"></span> All Critical Services Operational</div>
+        </div>
+    </div>
+
+</body>
+</html>
